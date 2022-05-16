@@ -180,6 +180,3 @@ def is_unlocked(courses_list, target_course):
         required = set(["COMP9417", "COMP9418", "COMP9444", "COMP9447"])
         courses_taken_from_req = len(required.intersection(set(courses_list)))
         return courses_taken_from_req >= 3
-
-
-print(is_unlocked(["COMP1521"], "COMP2121"))
